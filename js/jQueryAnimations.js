@@ -11,22 +11,22 @@ $(function() {
 
 //Animate the scrolling of href
 $(document).ready(function() {
-  $(document).on('click', 'a[href^="#"]', function(e) {
+    $(document).on('click', 'a[href^="#"]', function(e) {
 
-    var id = $(this).attr('href');
+      var id = $(this).attr('href');
 
-    var $id = $(id);
-    if ($id.length === 0) {
-        return;
-    }
+      var $id = $(id);
+      if ($id.length === 0) {
+          return;
+      }
 
-    // prevent standard hash navigation (avoid blinking in IE)
-    e.preventDefault();
+      // prevent standard hash navigation (avoid blinking in IE)
+      e.preventDefault();
 
-    var pos = $id.offset().top;
+      var pos = $id.offset().top;
 
-    setTimeout(function(){
-      $('body, html').animate({scrollTop: pos}, "slow");
-    },500);
-  });
+      setTimeout(function(){
+        $('body, html').animate({scrollTop: pos}, "slow");
+      },500);
+    });
 });
