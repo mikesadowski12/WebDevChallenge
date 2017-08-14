@@ -2,49 +2,6 @@ window.onload = function() {
   loadMembers();
 };
 
-function testing() {
-  var agc = new ApiGetClient();
-    //apibaseurl = 'https://randomuser.me',
-    //apipath = '/api/?results=5';
-
-
-    // direct way
-    agc.initialize(function (data, response) {
-        // parsed response body as js object
-        //console.log(data);
-        // raw response
-        alert(response);
-    });
-
-
-  alert(agc.getRequestUrl());
-
-  //agc.initialize('https://randomuser.me');
-
-  //agc.onreadystatechange = function() {
-
-  //}
-
-/*
-var xhr = new XMLHttpRequest(),
-    method = "GET",
-    url = "https://developer.mozilla.org/";
-
-xhr.open(method, url, true);
-xhr.onreadystatechange = function () {
-  if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-    console.log(xhr.responseText);
-  }
-};
-xhr.send();
-
-*/
-
-//https://randomuser.me
-//api
-//this.responseText
-}
-
 //Load 5 new members to the members sections
 function loadMembers() {
   var xhttp = new XMLHttpRequest();
@@ -87,7 +44,7 @@ function buildMemberLayout(url, name, email) {
     if(i == 0) {
       cards.push(buildMemberProfileCard(url[i], name[i], email[i], 0));
     } else if (i > 0) {
-      cards.push(buildMemberProfileCard(url[i], name[i], email[i], 5));
+      cards.push(buildMemberProfileCard(url[i], name[i], email[i], 3));
     }
   }
 

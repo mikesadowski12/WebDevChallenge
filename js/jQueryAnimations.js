@@ -25,6 +25,8 @@ $(document).ready(function() {
 
     var pos = $id.offset().top;
 
-    $('body, html').animate({scrollTop: pos}, "slow");
+    setTimeout(function(){
+      $('body, html').animate({scrollTop: pos}, "slow");
+    },500);
   });
 });
