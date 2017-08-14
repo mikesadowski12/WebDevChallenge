@@ -23,6 +23,12 @@ h1 {
   -webkit-text-stroke-width: 0.5px;
   -webkit-font-smoothing: antialiased;
 }
+h2 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+}
 h3 {
   font-size: 35px;
   text-align: center;
@@ -45,6 +51,7 @@ p {
   margin: 0;
   font-size: 18px;
   line-height: 1.5;
+  font-weight: 400;
 }
 @media (min-width: 768px) {
   p {
