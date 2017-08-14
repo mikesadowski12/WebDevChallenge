@@ -10,7 +10,7 @@ var ApiGetClient = new Class({
     method: 'get',
     queryparams: null,
     apibaseurl: 'https://randomuser.me',
-    apipath: '/api/'
+    apipath: '/api/?results=5'
   },
 
   initialize: function(options) {
