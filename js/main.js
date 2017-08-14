@@ -2,6 +2,18 @@ window.onload = function() {
   loadMembers();
 };
 
+function testing() {
+  var agc = new ApiGetClient();
+
+  //agc.initialize('https://randomuser.me');
+
+  //alert(agc.getRequestUrl());
+
+//https://randomuser.me
+//api
+
+}
+
 //Load 5 new members to the members sections
 function loadMembers() {
   var xhttp = new XMLHttpRequest();
