@@ -1,0 +1,27 @@
+input[type=text] {
+    width: 180px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+    padding-left:60px;
+    padding: 8px 15px 8px 30px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 55%;
+    outline: 0;
+}
+#search input {
+  background-image: url('../assets/search-icon-01.jpg');
+  background-size: auto 50%;
+  background-repeat: no-repeat;
+  background-position: left+10px center;
+  padding-left: 7%;
+}
+.search:focus {
+	outline:none;
+}
+::-webkit-input-placeholder {
+   font-size: 12px;
+}

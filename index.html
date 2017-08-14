@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Challenge</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="js/apiClient.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jQueryAnimations.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/searchbar.css">
+    <link rel="stylesheet" type="text/css" href="css/btn-load-more.css">
+    <link rel="stylesheet" type="text/css" href="css/membercard.css">
+  </head>
+
+  <body>
+
+    <!-- Navigation Bar -->
+    <div class="container">
+      <div class="topnav">
+        <div id="n-primary">
+          <a href="#home">HOME</a>
+          <a href="#">DASHBOARD</a>
+          <a href="#">ABOUT</a>
+          <a href="#">CAMPAIGNS/BRAND</a>
+          <a href="#">FILES</a>
+          <a href="#">DEPARTMENTS</a>
+          <a href="#memberlist">MEMBERS</a>
+        </div>
+      </div>
+      <div class="floatdiv" id="search">
+        <form>
+          <input type="text" class="search left" placeholder="Search everywhere">
+        </form>
+      </div>
+    </div>
+
+    <!-- Intro Header -->
+    <div id="home" class="module mid">
+      <h1>Welcome to the Community</h1>
+      <p>Share, connect and collaborate.</p>
+    </div>
+
+    <!-- Members Header -->
+    <div id="members">
+      <a id="memberlist"> <h3>Members</h3> </a>
+      <div >
+      <!--Insert Members Here -->
+      </div>
+    </div>
+
+    <!-- Load More Button -->
+    <div class="parentElement">
+        <a id="js-btn-action-more" class="btn-load-more" href="#bottom"
+              onclick="loadMembers()">Load more</a>
+    </div>
+
+    <!-- Footer -->
+    <br>
+    <div class="footer" id="bottom">
+      <br>
+      <p style="font-size: 10px;">&copy; 2016 <img src="assets/community-footer-logo.jpg"
+              style="width:6%;height:6%;padding-left:73%;" alt="Error displaying image"> </p>
+    </div>
+  </body>
+</html>

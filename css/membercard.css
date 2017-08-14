@@ -1,0 +1,35 @@
+.card {
+  max-width: 150px;
+  text-align: center;
+  font-family: arial;
+  display: inline-block;
+  -webkit-animation-name: myFade; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: myFade;
+  animation-duration: 2s;
+}
+.container::after {
+  content: "";
+  clear: both;
+}
+.emailtitle {
+  color: grey;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.img-circle {
+    border-radius: 50%;
+    max-width:200px;
+    max-height:200px;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+}
+@keyframes myFade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes myFade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
